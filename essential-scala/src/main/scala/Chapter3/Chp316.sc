@@ -60,6 +60,9 @@ val b = thomasCrownAffair.copy(yearOfRelease = 1968, director = new Director("No
 val c = inception.copy().copy().copy()
 // res21: Film = Film(Inception,2010,8.8,Director(Christopher,Nolan ,1970))
 
+class Adder(amount: Int) {
+  def add(in: Int) = in + amount
+}
 
 class Counter(val count: Int = 0){
   def inc: Counter = inc()
@@ -80,12 +83,10 @@ class Counter(val count: Int = 0){
 
 }
 
-new Counter(10).inc().dec().inc().inc().count
+new Counter(10).inc.dec.inc.inc.count
 // res23: Int = 12
 
 new Counter(10).inc.inc(10).count
 // res25: Int = 21
 
-class Adder(amount: Int) {
-  def add(in: Int) = in + amount
-}
+new Counter().adjust(new Adder(10) ).count
