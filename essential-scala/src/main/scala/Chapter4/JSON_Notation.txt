@@ -1,0 +1,11 @@
+Json ::= JsNumber value:Double
+        |JsString value:String
+        |JsNull
+        |JsSequence
+        |JsObject
+
+JsSequence ::= SeqCell head:Json tail:JsSequence
+        |SeqEnd
+
+JsObject ::= ObjectCell key:String value:Json tail:JsObject
+        |ObjectEnd
