@@ -1,0 +1,16 @@
+Generics: Abstract over data types
+
+def generic[A](in: A): A = in
+
+generic[String]("foo")
+// res0: String = foo
+
+generic(1)
+// res1: Int = 1
+
+Syntax:
+case class Name[A]( ... ){ ... }
+
+trait Name[A] { ... }
+
+def name[A]( ... ){ ... }
