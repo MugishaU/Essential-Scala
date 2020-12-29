@@ -25,7 +25,7 @@ final case class End[A]() extends LinkedList[A]
 final case class Pair[A](head: A, tail: LinkedList[A]) extends LinkedList[A]
 
 val example = Pair(1, Pair(2, Pair(3, End())))
-
+val strExample = Pair('m', Pair('u',End()))
 
 assert(example.length == 3)
 assert(example.tail.length == 2)
@@ -34,6 +34,7 @@ assert(End().length == 0)
 assert(example.contains(3))
 assert(!example.contains(4))
 assert(!End().contains(0))
+assert(strExample.contains('m'))
 
 assert(example(0) == Success(1))
 assert(example(1) == Success(2))
