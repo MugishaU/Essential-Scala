@@ -34,12 +34,15 @@ object Chp55 {
   final case class Empty[A]() extends Maybe[A]
 
   val list: LinkedList[Int] = Pair(1, Pair(2, Pair(3, End())))
+  val list2: List[Maybe[Int]] = List(Full(3), Full(2), Full(1))
 
-  def main(args: Array[String]): Unit = {
-    println(list.map(_ * 2))
-    println(list.map(_ + 1))
-    println(list.map(_ / 3))
-  }
+
+//  def main(args: Array[String]): Unit = {
+//    println(list.map(_ * 2))
+//    println(list.map(_ + 1))
+//    println(list.map(_ / 3))
+//    println(list2.map(maybe => maybe.flatMap[Int] { x => if (x % 2 == 0) Full(x) else Empty() } ))
+//  }
 
 
 }
