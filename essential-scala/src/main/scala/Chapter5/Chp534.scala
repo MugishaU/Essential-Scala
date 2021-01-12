@@ -28,8 +28,8 @@ object Chp534 {
 
 
 
-  def main(args: Array[String]): Unit = {
-    println(tree.fold[String]((l,r)=> l + " " + r, str => str))
-  }
+//  def main(args: Array[String]): Unit = {
+//    println(tree.fold[String]((l,r)=> l + " " + r, str => str))
+//  }
 
 }
