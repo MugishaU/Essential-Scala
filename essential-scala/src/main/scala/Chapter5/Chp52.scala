@@ -30,13 +30,13 @@ object Chp52 {
 
   val example: IntList = Pair(1, Pair(2, Pair(3, End)))
 
-  def main(args: Array[String]): Unit = {
-    assert(example.length == 3)
-    assert(example.product == 6)
-    assert(example.sum == 6)
-    assert(example.double == Pair(2, Pair(4, Pair(6, End))))
-
-  }
+//  def main(args: Array[String]): Unit = {
+//    assert(example.length == 3)
+//    assert(example.product == 6)
+//    assert(example.sum == 6)
+//    assert(example.double == Pair(2, Pair(4, Pair(6, End))))
+//
+//  }
 
 }
 
