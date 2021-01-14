@@ -10,8 +10,9 @@ object Chp52 {
         case Pair(hd, tl) => f(hd, tl.fold(end, f))
       }
 
-    def length: Int =
+    def length: Int = {
       fold[Int](0, (_,tl) => 1 + tl)
+    }
 
     def double: IntList =
       fold[IntList](End, (hd, tl)=>Pair(hd*2, tl))
