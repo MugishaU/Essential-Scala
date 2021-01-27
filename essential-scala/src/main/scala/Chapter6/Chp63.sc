@@ -15,3 +15,4 @@ for {
   element <- subseq
 } yield element * 2
 
+data.flatMap(subseq => subseq.map(element => element * 2))
