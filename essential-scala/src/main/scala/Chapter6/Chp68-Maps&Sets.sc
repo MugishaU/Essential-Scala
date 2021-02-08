@@ -1,7 +1,12 @@
-val map = Map("a"->1,"b"->2,"c"->3)
+val exm = scala.collection.mutable.Map("a"->1,"b"->2,"c"->3)
 
-map("a")
-map.get("b")
-map.getOrElse("d",-1)
-map.contains("c")
-map.size
+exm("a")
+exm.get("b")
+exm.getOrElse("d",-1)
+exm.contains("c")
+exm.size
+
+exm += ("d"->4)
+
+exm("e") = 10
+exm.map(pair => pair._1+1 -> pair._2*7)
