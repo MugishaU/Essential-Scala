@@ -26,9 +26,9 @@ object Chp5544 {
   final case class Success[A, B](value: A) extends Sum[A, B]
 
   val list = List(1,2,3)
-  def main(args: Array[String]): Unit = {
-    println(list.flatMap(x => List(x,-x)))
-  }
+//  def main(args: Array[String]): Unit = {
+//    println(list.flatMap(x => List(x,-x)))
+//  }
 
 
 }
